@@ -1,4 +1,4 @@
-# Project Title
+# Loan Qualifier Application
 
 
 Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
@@ -13,13 +13,20 @@ Describe the technologies required to use your project such as programming langu
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Please install following python packages in order to run this repo:
+```
+pip install fire
+pip install questionary
+```
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+To use this application to find the qualifying loans, please run `app.py`:
+```
+python app.py
+```
 
 ---
 

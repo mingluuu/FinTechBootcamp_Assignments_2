@@ -8,6 +8,7 @@ Example:
 """
 import sys
 import fire
+import csv
 import questionary
 from pathlib import Path
 
@@ -108,9 +109,32 @@ def save_qualifying_loans(qualifying_loans):
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
+    
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+    csv_output = questionary.text("Enter a file path to output qualifying loans (.csv):").ask()
+    questionary.confirm(csv_output).ask()
+    save_csv(qualifying_loans, csv_output)
+    
 
+def save_csv(qualifying_loans, csv_output):
+    """Save list of lists to CSV file.
+    
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans.
+        csv_output (file path): The CSV file output path.
+    """
+    
+    # Set the output file path
+    csv_output = Path(csv_output)
+    # Set header
+    header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
+    with open(csv_output, 'w') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(header)
+        for loan in qualifying_loans:
+            csvwriter.writerow(loan)
+            
 
 def run():
     """The main function for running the script."""
