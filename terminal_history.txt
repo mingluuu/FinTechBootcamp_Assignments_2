@@ -1,0 +1,50 @@
+   49  conda install -c conda-forge nodejs
+   50  jupyter lab
+   51  cd ..
+   52  cd ..
+   53  cd ..
+   54  cd ..
+   55  jupyter lab
+   56  l
+   57  jupyter lab
+   58  history
+   59  jupyter lab
+   60  cd Desktop/
+   61  cd Fintech-Workspace
+   62  cd Python_Project/
+   63  ls
+   64  conda activate dev
+   65  python --version
+   66  code .
+   67  python Hello_Python.py
+   68  conda deactivate
+   69  conda activate dev
+   70  code .
+   71  /usr/bin/python /Users/mingluli/Desktop/Fintech-Workspace/Python_Project/Hello_Python.py
+   72  /usr/bin/python /Users/mingluli/Desktop/Fintech-Workspace/Python_Project/Hello_Python.py
+   73  /usr/bin/python /Users/mingluli/Desktop/Fintech-Workspace/Python_Project/Hello_Python.py
+   74  /usr/bin/python /Users/mingluli/Desktop/Fintech-Workspace/Python_Project/Hello_Python.py
+   75   /usr/bin/env /usr/bin/python /Users/mingluli/.vscode/extensions/ms-python.python-2021.9.1230869389/pythonFiles/lib/python/debugpy/launcher 65219 -- /Users/mingluli/Desktop/Fintech-Workspace/Python_Project/Hello_Python.py 
+   76  conda activate dev
+   77  python
+   78  ls
+   79  python app.py 
+   80  pip install fire
+   81  python app.py 
+   82  pip install questionary
+   83  python app.py 
+   84  python app.py 
+   85  python app.py 
+   86  python app.py 
+   87  ls
+   88  python app.py 
+   89  python app.py 
+   90  python app.py 
+   91  history 50 > terminal_history.txt
+   92  pip freeze -> requirements.txt
+   93  python -m pip freeze > requirements.txt
+   94  git add app.py README.md 
+   95  git commit -m "Added save_csv feature and added a save dialog to the existing CLI."
+   96  git push origin main
+   97  history
+   98  history 50 > terminal_history.txt
